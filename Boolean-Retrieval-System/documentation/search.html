@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>search API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>search</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import argparse
+import timeit
+import os
+from nltk.stem import PorterStemmer
+from nltk.tokenize import word_tokenize
+
+from ir_system import IRSystem
+
+# docs = [&#39;hello i m a machine learning engineer&#39;, 
+#         &#39;hello bad world machine engineering people&#39;, 
+#         &#39;the world is a bad place&#39;,
+#         &#39;engineering a great machine that learns&#39;,&#34;world is so great&#34;,&#39;&#39;,&#39;&#39;]
+docs=[]
+for i in range(1,50):
+    docs.append(&#39; &#39;)
+
+#these are just a list of preliminary stop words listed by us but all the other stop words are take care using nltk library
+stop_words = [&#39;is&#39;, &#39;a&#39;, &#39;for&#39;, &#39;the&#39;, &#39;of&#39;,&#39;this&#39;,&#39;was&#39;,&#39;it&#39;,&#39;that&#39;,&#39;.&#39;,&#39;,&#39;,&#39;;&#39;,&#39;:&#39;,&#39;-&#39;,&#39;_&#39;]
+
+
+documentID = 0
+path = r&#34;C:\Users\Rohan\OneDrive\Desktop\ir\Wildcard-Query-Search-Engine\proj\dataset&#34;
+
+ps = PorterStemmer()
+tokens={}
+filename={}
+for root, dirs, files in os.walk(path):
+    for file in files:
+        filename[documentID+1]=file
+        with open(os.path.join(path, file), encoding=&#34;utf-8&#34;,errors=&#34;ignore&#34;) as f:
+                documentID += 1
+                line_tokens = []
+                print(documentID)
+               
+                for line in f:
+                    print(line)
+                    line_tokens = line.split()
+                    for each in line_tokens:
+                        if each not in stop_words:
+                            curr_word=&#34;&#34;
+                            for x in each:
+                                if x.isalnum():
+                                    curr_word+=x
+                            docs[documentID]+=&#39; &#39;+curr_word   
+
+                            if curr_word not in tokens:
+                                tokens[curr_word] = [documentID]
+                            else:
+                                tokens[curr_word].append(documentID)
+def rotate(str, n):
+    return str[n:] + str[:n]
+
+keys = tokens.keys()
+for key in sorted(keys):
+    dkey = key + &#34;$&#34;
+    for i in range(len(dkey),0,-1):
+        out = rotate(dkey,i)
+
+class TrieNode:
+     
+    # Trie node class
+    def __init__(self):
+        self.children = [None]*26
+ 
+        # isEndOfWord is True if node represent the end of the word
+        self.isEndOfWord = False
+ 
+class Trie:
+     
+    # Trie data structure class
+    def __init__(self):
+        self.root = self.getNode()
+ 
+    def getNode(self):
+     
+        # Returns new trie node (initialized to NULLs)
+        return TrieNode()
+ 
+    def _charToIndex(self,ch):
+         
+        # private helper function
+        # Converts key current character into index
+        # use only &#39;a&#39; through &#39;z&#39; and lower case
+         
+        return ord(ch)-ord(&#39;a&#39;)
+
+    def insert(self,key):
+         
+        # If not present, inserts key into trie
+        # If the key is prefix of trie node,
+        # just marks leaf node
+        pCrawl = self.root
+        length = len(key)
+        for level in range(length):
+            index = self._charToIndex(key[level])
+ 
+            # if current character is not present
+            if not pCrawl.children[index]:
+                pCrawl.children[index] = self.getNode()
+            pCrawl = pCrawl.children[index]
+ 
+        # mark last node as leaf
+        pCrawl.isEndOfWord = True
+ 
+    def search(self, key):
+         
+        # Search key in the trie
+        # Returns true if key presents
+        # in trie, else false
+        pCrawl = self.root
+        length = len(key)
+        for level in range(length):
+            index = self._charToIndex(key[level])
+            if not pCrawl.children[index]:
+                return False
+            pCrawl = pCrawl.children[index]
+ 
+        return pCrawl.isEndOfWord
+def parse_args():
+    parser = argparse.ArgumentParser(description=&#39;Information Retrieval System Configuration&#39;)
+    return parser.parse_args()
+
+def hashFunc(s):
+    ans= hash(s)
+    ans=ans%1003#1003 is some primenumber
+    # print(ans)
+    return ans
+hm={}#hashmap for preprocessing
+def preprocessHash():
+    for x in tokens:
+        if hashFunc(x) not in hm:
+            hm[hashFunc(x)]=[x]
+        else:
+            hm[hashFunc(x)].append(x)
+        
+def main():
+    args = parse_args()
+    ir = IRSystem(docs, stop_words=stop_words)
+    preprocessHash()
+    while True:
+        query = input(&#39;Enter boolean query: &#39;)
+        for x in query:
+            if(x==&#39;*&#39;):
+                wildcard(query)
+        start = timeit.default_timer()
+        nquery=editDistQuery(query)
+        print(query)
+        print(nquery)
+        query=input(&#39;ENTER THE CORRECTED INPUT: &#39;)
+        results = ir.process_query(query)
+    
+        stop = timeit.default_timer()
+
+        if results is not None:
+            print (&#39;Processing time: {:.5} secs&#39;.format(stop - start))
+            print(&#39;\nDoc IDS: &#39;)
+            li=[]
+            for x in results:
+                # print(type(x))
+                filename.get(x-1)
+                li.append(x)
+            print(li) 
+            # print(filename)   
+      
+def editDistQuery(query):
+    finalQuery=&#34;&#34;
+    words=query.split()
+    
+    
+    # for word in words:
+    #     if hm.get(hashFunc(x)) is not None:
+    #         for k in hm.get(hashFunc(x)):
+    #             value=editDistDP(k,word,len(k),len(word))
+    #             if(value&lt;ans_val):
+    #                 ans_val=value
+    #                 finalWord=k
+    #     finalQuery+=&#39; &#39;+finalWord
+    # return finalQuery   
+    for word in words:
+        ans_val=100000000000000
+        finalWord=&#34;&#34;
+        if(word==&#34;AND&#34; or word==&#34;OR&#34; or word==&#34;NOT&#34; or tokens.get(word) is not None):
+            finalQuery=finalQuery+word+&#34; &#34;
+            continue
+        for k in tokens.keys():
+            if(k==word):
+                print(&#34;hellow&#34;)
+            value=editDistDP(k,word,len(k),len(word))
+            if(value&lt;ans_val):
+                ans_val=value
+                finalWord=k
+        finalQuery=finalQuery+finalWord+&#34; &#34;
+    # finalQuery.strip()
+    
+    return finalQuery   
+ 
+def editDistDP(str1, str2, m, n):
+    # Create a table to store results of subproblems
+    dp = [[0 for x in range(n + 1)] for x in range(m + 1)]
+ 
+    # Fill d[][] in bottom up manner
+    for i in range(m + 1):
+        for j in range(n + 1):
+ 
+            # If first string is empty, only option is to
+            # insert all characters of second string
+            if i == 0:
+                dp[i][j] = j    # Min. operations = j
+ 
+            # If second string is empty, only option is to
+            # remove all characters of second string
+            elif j == 0:
+                dp[i][j] = i    # Min. operations = i
+ 
+            # If last characters are same, ignore last char
+            # and recur for remaining string
+            elif str1[i-1] == str2[j-1]:
+                dp[i][j] = dp[i-1][j-1]
+ 
+            # If last character are different, consider all
+            # possibilities and find minimum
+            else:
+                dp[i][j] = 1 + min(dp[i][j-1],        # Insert
+                                   dp[i-1][j],        # Remove
+                                   dp[i-1][j-1])    # Replace
+ 
+    return dp[m][n]
+ 
+ 
+if __name__ == &#39;__main__&#39;:
+    try:
+        main()
+    except KeyboardInterrupt as e:
+        print(&#39;EXIT&#39;)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="search.editDistDP"><code class="name flex">
+<span>def <span class="ident">editDistDP</span></span>(<span>str1, str2, m, n)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def editDistDP(str1, str2, m, n):
+    # Create a table to store results of subproblems
+    dp = [[0 for x in range(n + 1)] for x in range(m + 1)]
+ 
+    # Fill d[][] in bottom up manner
+    for i in range(m + 1):
+        for j in range(n + 1):
+ 
+            # If first string is empty, only option is to
+            # insert all characters of second string
+            if i == 0:
+                dp[i][j] = j    # Min. operations = j
+ 
+            # If second string is empty, only option is to
+            # remove all characters of second string
+            elif j == 0:
+                dp[i][j] = i    # Min. operations = i
+ 
+            # If last characters are same, ignore last char
+            # and recur for remaining string
+            elif str1[i-1] == str2[j-1]:
+                dp[i][j] = dp[i-1][j-1]
+ 
+            # If last character are different, consider all
+            # possibilities and find minimum
+            else:
+                dp[i][j] = 1 + min(dp[i][j-1],        # Insert
+                                   dp[i-1][j],        # Remove
+                                   dp[i-1][j-1])    # Replace
+ 
+    return dp[m][n]</code></pre>
+</details>
+</dd>
+<dt id="search.editDistQuery"><code class="name flex">
+<span>def <span class="ident">editDistQuery</span></span>(<span>query)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def editDistQuery(query):
+    finalQuery=&#34;&#34;
+    words=query.split()
+    
+    
+    # for word in words:
+    #     if hm.get(hashFunc(x)) is not None:
+    #         for k in hm.get(hashFunc(x)):
+    #             value=editDistDP(k,word,len(k),len(word))
+    #             if(value&lt;ans_val):
+    #                 ans_val=value
+    #                 finalWord=k
+    #     finalQuery+=&#39; &#39;+finalWord
+    # return finalQuery   
+    for word in words:
+        ans_val=100000000000000
+        finalWord=&#34;&#34;
+        if(word==&#34;AND&#34; or word==&#34;OR&#34; or word==&#34;NOT&#34; or tokens.get(word) is not None):
+            finalQuery=finalQuery+word+&#34; &#34;
+            continue
+        for k in tokens.keys():
+            if(k==word):
+                print(&#34;hellow&#34;)
+            value=editDistDP(k,word,len(k),len(word))
+            if(value&lt;ans_val):
+                ans_val=value
+                finalWord=k
+        finalQuery=finalQuery+finalWord+&#34; &#34;
+    # finalQuery.strip()
+    
+    return finalQuery   </code></pre>
+</details>
+</dd>
+<dt id="search.hashFunc"><code class="name flex">
+<span>def <span class="ident">hashFunc</span></span>(<span>s)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def hashFunc(s):
+    ans= hash(s)
+    ans=ans%1003#1003 is some primenumber
+    # print(ans)
+    return ans</code></pre>
+</details>
+</dd>
+<dt id="search.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    args = parse_args()
+    ir = IRSystem(docs, stop_words=stop_words)
+    preprocessHash()
+    while True:
+        query = input(&#39;Enter boolean query: &#39;)
+        for x in query:
+            if(x==&#39;*&#39;):
+                wildcard(query)
+        start = timeit.default_timer()
+        nquery=editDistQuery(query)
+        print(query)
+        print(nquery)
+        query=input(&#39;ENTER THE CORRECTED INPUT: &#39;)
+        results = ir.process_query(query)
+    
+        stop = timeit.default_timer()
+
+        if results is not None:
+            print (&#39;Processing time: {:.5} secs&#39;.format(stop - start))
+            print(&#39;\nDoc IDS: &#39;)
+            li=[]
+            for x in results:
+                # print(type(x))
+                filename.get(x-1)
+                li.append(x)
+            print(li) </code></pre>
+</details>
+</dd>
+<dt id="search.parse_args"><code class="name flex">
+<span>def <span class="ident">parse_args</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def parse_args():
+    parser = argparse.ArgumentParser(description=&#39;Information Retrieval System Configuration&#39;)
+    return parser.parse_args()</code></pre>
+</details>
+</dd>
+<dt id="search.preprocessHash"><code class="name flex">
+<span>def <span class="ident">preprocessHash</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def preprocessHash():
+    for x in tokens:
+        if hashFunc(x) not in hm:
+            hm[hashFunc(x)]=[x]
+        else:
+            hm[hashFunc(x)].append(x)</code></pre>
+</details>
+</dd>
+<dt id="search.rotate"><code class="name flex">
+<span>def <span class="ident">rotate</span></span>(<span>str, n)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def rotate(str, n):
+    return str[n:] + str[:n]</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="search.Trie"><code class="flex name class">
+<span>class <span class="ident">Trie</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Trie:
+     
+    # Trie data structure class
+    def __init__(self):
+        self.root = self.getNode()
+ 
+    def getNode(self):
+     
+        # Returns new trie node (initialized to NULLs)
+        return TrieNode()
+ 
+    def _charToIndex(self,ch):
+         
+        # private helper function
+        # Converts key current character into index
+        # use only &#39;a&#39; through &#39;z&#39; and lower case
+         
+        return ord(ch)-ord(&#39;a&#39;)
+
+    def insert(self,key):
+         
+        # If not present, inserts key into trie
+        # If the key is prefix of trie node,
+        # just marks leaf node
+        pCrawl = self.root
+        length = len(key)
+        for level in range(length):
+            index = self._charToIndex(key[level])
+ 
+            # if current character is not present
+            if not pCrawl.children[index]:
+                pCrawl.children[index] = self.getNode()
+            pCrawl = pCrawl.children[index]
+ 
+        # mark last node as leaf
+        pCrawl.isEndOfWord = True
+ 
+    def search(self, key):
+         
+        # Search key in the trie
+        # Returns true if key presents
+        # in trie, else false
+        pCrawl = self.root
+        length = len(key)
+        for level in range(length):
+            index = self._charToIndex(key[level])
+            if not pCrawl.children[index]:
+                return False
+            pCrawl = pCrawl.children[index]
+ 
+        return pCrawl.isEndOfWord</code></pre>
+</details>
+<h3>Methods</h3>
+<dl>
+<dt id="search.Trie.getNode"><code class="name flex">
+<span>def <span class="ident">getNode</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def getNode(self):
+ 
+    # Returns new trie node (initialized to NULLs)
+    return TrieNode()</code></pre>
+</details>
+</dd>
+<dt id="search.Trie.insert"><code class="name flex">
+<span>def <span class="ident">insert</span></span>(<span>self, key)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert(self,key):
+     
+    # If not present, inserts key into trie
+    # If the key is prefix of trie node,
+    # just marks leaf node
+    pCrawl = self.root
+    length = len(key)
+    for level in range(length):
+        index = self._charToIndex(key[level])
+
+        # if current character is not present
+        if not pCrawl.children[index]:
+            pCrawl.children[index] = self.getNode()
+        pCrawl = pCrawl.children[index]
+
+    # mark last node as leaf
+    pCrawl.isEndOfWord = True</code></pre>
+</details>
+</dd>
+<dt id="search.Trie.search"><code class="name flex">
+<span>def <span class="ident">search</span></span>(<span>self, key)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def search(self, key):
+     
+    # Search key in the trie
+    # Returns true if key presents
+    # in trie, else false
+    pCrawl = self.root
+    length = len(key)
+    for level in range(length):
+        index = self._charToIndex(key[level])
+        if not pCrawl.children[index]:
+            return False
+        pCrawl = pCrawl.children[index]
+
+    return pCrawl.isEndOfWord</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="search.TrieNode"><code class="flex name class">
+<span>class <span class="ident">TrieNode</span></span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TrieNode:
+     
+    # Trie node class
+    def __init__(self):
+        self.children = [None]*26
+ 
+        # isEndOfWord is True if node represent the end of the word
+        self.isEndOfWord = False</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="search.editDistDP" href="#search.editDistDP">editDistDP</a></code></li>
+<li><code><a title="search.editDistQuery" href="#search.editDistQuery">editDistQuery</a></code></li>
+<li><code><a title="search.hashFunc" href="#search.hashFunc">hashFunc</a></code></li>
+<li><code><a title="search.main" href="#search.main">main</a></code></li>
+<li><code><a title="search.parse_args" href="#search.parse_args">parse_args</a></code></li>
+<li><code><a title="search.preprocessHash" href="#search.preprocessHash">preprocessHash</a></code></li>
+<li><code><a title="search.rotate" href="#search.rotate">rotate</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="search.Trie" href="#search.Trie">Trie</a></code></h4>
+<ul class="">
+<li><code><a title="search.Trie.getNode" href="#search.Trie.getNode">getNode</a></code></li>
+<li><code><a title="search.Trie.insert" href="#search.Trie.insert">insert</a></code></li>
+<li><code><a title="search.Trie.search" href="#search.Trie.search">search</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="search.TrieNode" href="#search.TrieNode">TrieNode</a></code></h4>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
